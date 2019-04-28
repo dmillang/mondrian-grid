@@ -1,5 +1,10 @@
 # Web Project Holy Grail - 2019
 
+# Table of Contents
+1. [Summary](#Summary)
+2. [I know what I'm doing](#I%20know%20what%20I'm%20doing)
+3. [I don't know what I'm doing](#I%20don't%20know%20what%20I'm%20doing)
+
 ## Summary
 ### The use of this remote repository
 
@@ -8,9 +13,10 @@ This is the starting point I use for any web project that **does not use** a fra
 All this setup is done through NVM (node version manager) to use Node.js and NPM without requiring the use of `sudo` on the Terminal. That helps avoid permission errors if you are on a macOS operating system.
 
 **NOTE: ALL STEPS IN THIS GUIDE ASSUME YOU ARE ON A MAC**
+**NOTE: THIS REMOTE REPOSITORY DOES NOT CONTAIN A PRODUCTION FOLDER**
 
 ## I know what I'm doing
-### How to quickly use this repository if you've used Gulp 4 before on your machine
+### How to quickly use this repository if you've used Gulp 4 before on your machine:
 
 1. Open Terminal and move (`cd`) to whatever folder you use to save your projects.
 
@@ -18,7 +24,7 @@ All this setup is done through NVM (node version manager) to use Node.js and NPM
 
 3. Move to your project folder (`cd "project-name"`).
 
-4. Clone the repository in your project folder. Notice the `.` at the end of the command. It is important to include it because that will allow you to clone the remote repository files into your project folder without a parent folder. Learn more about how to [Git clone without project folder](https://magp.ie/2017/03/16/git-clone-without-project-folder/).
+4. Clone this repository in your project folder. Notice the `.` at the end of the command. It is important to include it because that will allow you to clone the remote repository files into your project folder without a parent folder. Learn more about how to [Git clone without project folder](https://magp.ie/2017/03/16/git-clone-without-project-folder/).
 ```
 git clone https://github.com/dmillang/gulp-boilerplate.git .
 ```
@@ -33,7 +39,12 @@ npm install
 gulp watch
 ```
 
-7. Done. You'll see the Terminal is busy watching for updates in the code. If you need to do something with the Terminal just stop `gulp watch` by typing this on the Terminal:
+7. Done. You'll see the Terminal is busy watching for updates in the code. If you need to do something with the Terminal just stop `gulp watch` by typing the following on the Terminal:
 ```
 cntl + c
 ```
+
+8. NOTE: All this Gulp 4 magic is defined on the `gulpfile.js`. Basically it has two `functions` that `.pipe` a set of actions to make our life easier while developing. The first function `function style()` is called inside the second function `function watch()`. That's why we only need to call `gulp watch` to initiate all we want (SCSS compiler and BrowserSync).
+
+## I don't know what I'm doing
+### How to set up this repository if you've never used NVM, Node.js, NPM or Gulp 4 before on your machine:
