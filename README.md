@@ -1,9 +1,9 @@
 # Web Project Holy Grail - 2019
 
 # Table of Contents
-1. [Summary](#Summary)
-2. [I know what I'm doing](#I%20know%20what%20I'm%20doing)
-3. [I don't know what I'm doing](#I%20don't%20know%20what%20I'm%20doing)
+1. [Summary](#summary)
+2. [I know what I'm doing](#i-know-what-im-doing)
+3. [I don't know what I'm doing](#i-dont-know-what-im-doing)
 
 ## Summary
 ### The use of this remote repository
