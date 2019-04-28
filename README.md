@@ -2,8 +2,8 @@
 
 # Table of Contents
 1. [Summary](#summary)
-2. [I know what I'm doing](#i-know-what-im-doing)
-3. [I don't know what I'm doing](#i-dont-know-what-im-doing)
+2. [I have used Gulp 4 in this machine before](#i-have-used-Gulp-4-in-this-machine-before)
+3. [I have never used Gulp 4 in this machine before](#i-have-never-used-Gulp-4-in-this-machine-before)
 
 ## Summary
 ### The use of this remote repository
@@ -21,7 +21,7 @@ All this setup is done through [NVM (node version manager)](https://github.com/n
 npm audit
 ```
 
-## I know what I'm doing
+## I have used Gulp 4 in this machine before
 ### How to quickly use this repository if you've used Gulp 4 before on your machine:
 
 1. Open Terminal and move (`cd`) to whatever folder you use to save your projects.
@@ -91,4 +91,4 @@ gulp -v
 ```
 CLI version: 2.2.0
 ```
-6. Now that you are set globally, all you need to do is follow the steps on [I know what I'm doing](#i-know-what-im-doing).
+6. Now that you are set globally, all you need to do is follow the steps on [I have used Gulp 4 in this machine before](#i-have-used-Gulp-4-in-this-machine-before).
