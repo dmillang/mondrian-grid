@@ -52,7 +52,7 @@ cntrl + c
 
 8. NOTE: All this Gulp 4 magic is defined on the `gulpfile.js`. Basically it has two `functions` that `.pipe` a set of actions to make our life easier while developing. The first function `function style()` is called inside the second function `function watch()`. That's why we only need to call `gulp watch` on the Terminal to initiate all we need (SCSS compiler and BrowserSync).
 
-## I don't know what I'm doing
+## I have never used Gulp 4 in this machine before
 ### How to set up this repository if you've never used NVM, Node.js, NPM or Gulp 4 before on your machine:
 
 If you know of the existence of Gulp and its virtues, but you've never use it before in your macOS machine, follow this steps to set up a functioning project folder that uses Gulp with SCSS compiler and BrowserSync:
