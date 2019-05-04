@@ -420,16 +420,6 @@ html {
   box-sizing: inherit; }
 
 /**
- * Basic styles for links
- */
-a {
-  color: #e50050;
-  text-decoration: none; }
-  a:hover, a:active, a:focus {
-    color: #222222;
-    text-decoration: underline; }
-
-/**
  * Basic typography style for copy text
  */
 body {
@@ -492,7 +482,8 @@ body {
   width: 1px; }
 
 body {
-  background: black; }
+  background: linear-gradient(to bottom, #0d0d0d 0%, #1e1e1e 100%);
+  background-blend-mode: multiply; }
 
 .grid {
   display: grid;
@@ -502,105 +493,109 @@ body {
   width: 100vw;
   height: 100vh; }
 
+.grid__card {
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
 .one {
   grid-row: 1 / 2;
   grid-column: 1 / span 2;
-  background: white; }
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
 
 .two {
   grid-row: 1 / 2;
   grid-column: 3 / span 3;
-  background: white; }
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
 
 .three {
   grid-row: 1 / 2;
   grid-column: 6 / span 4;
-  background: yellow; }
+  background-image: linear-gradient(to bottom, #ffda37 0%, #ffd415 100%); }
 
 .four {
   grid-row: 1 / span 6;
   grid-column: 10 / span 1;
-  background: white; }
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
 
 .five {
   grid-row: 2 / span 2;
   grid-column: 1 / span 1;
-  background: white; }
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
 
 .six {
   grid-row: 2 / span 4;
   grid-column: 2 / span 4;
-  background: red; }
+  background-image: linear-gradient(to bottom, #ff4e37 0%, #ff3015 100%); }
 
 .seven {
   grid-row: 2 / span 2;
   grid-column: 6 / span 4;
-  background: yellow; }
+  background-image: linear-gradient(to bottom, #ffda37 0%, #ffd415 100%); }
 
 .eight {
   grid-row: 4 / span 3;
   grid-column: 1 / span 1;
-  background: white; }
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
 
 .nine {
   grid-row: 4 / span 2;
   grid-column: 6 / span 2;
-  background: white; }
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
 
 .ten {
   grid-row: 4 / span 2;
   grid-column: 8 / span 2;
-  background: white; }
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
 
 .eleven {
   grid-row: 6 / span 2;
   grid-column: 2 / span 2;
-  background: gray; }
+  background-image: linear-gradient(to bottom, #161616 0%, #272727 100%); }
 
 .twelve {
   grid-row: 6 / span 1;
   grid-column: 4 / span 2;
-  background: white; }
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
 
 .thirteen {
   grid-row: 7 / span 1;
   grid-column: 4 / span 2;
-  background: white; }
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
 
 .fourteen {
   grid-row: 6 / span 1;
   grid-column: 6 / span 4;
-  background: white; }
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
 
 .fifteen {
   grid-row: 7 / span 3;
   grid-column: 1 / span 1;
-  background: yellow; }
+  background-image: linear-gradient(to bottom, #ffda37 0%, #ffd415 100%); }
 
 .sixteen {
   grid-row: 8 / span 2;
   grid-column: 2 / span 2;
-  background: white; }
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
 
 .seventeen {
   grid-row: 8 / span 1;
   grid-column: 4 / span 2;
-  background: gray; }
+  background-image: linear-gradient(to bottom, #161616 0%, #272727 100%); }
 
 .eighteen {
   grid-row: 7 / span 2;
   grid-column: 6 / span 4;
-  background: blue; }
+  background: linear-gradient(to bottom, #447feb 0%, #256ae8 100%); }
 
 .nineteen {
   grid-row: 7 / span 3;
   grid-column: 10 / span 1;
-  background: red; }
+  background-image: linear-gradient(to bottom, #ff4e37 0%, #ff3015 100%); }
 
 .twenty {
   grid-row: 9 / span 1;
   grid-column: 4 / span 6;
-  background: white; }
+  background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
 
 .grid > div {
   display: flex;

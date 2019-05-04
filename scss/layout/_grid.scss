@@ -28,7 +28,8 @@
 // }
 
 body {
-    background: black;
+    background: $black;
+    background-blend-mode: multiply;
 }
 
 .grid {
@@ -39,125 +40,130 @@ body {
     width: 100vw;
     height: 100vh;
   }
-  
+
+.grid__card {
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
   .one {
     grid-row: 1 / 2;
     grid-column: 1 / span 2;
-    background: white;
+    background-image: $white;
   }
   
   .two {
     grid-row: 1 / 2;
     grid-column: 3 / span 3;
-    background: white;
+    background-image: $white;
   }
   
   .three {
     grid-row: 1 / 2;
     grid-column: 6 / span 4;
-    background: yellow;
+    background-image: $yellow;
   }
 
   .four {
     grid-row: 1 / span 6;
     grid-column: 10 / span 1;
-    background: white;
+    background-image: $white;
   }
 
   .five {
     grid-row: 2 / span 2;
     grid-column: 1 / span 1;
-    background: white;
+    background-image: $white;
   }
 
   .six {
     grid-row: 2 / span 4;
     grid-column: 2 / span 4;
-    background: red;
+    background-image: $red;
   }
 
   .seven {
     grid-row: 2 / span 2;
     grid-column: 6 / span 4;
-    background: yellow;
+    background-image: $yellow;
   }
 
   .eight {
     grid-row: 4 / span 3;
     grid-column: 1 / span 1;
-    background: white;
+    background-image: $white;
   }
 
   .nine {
     grid-row: 4 / span 2;
     grid-column: 6 / span 2;
-    background: white;
+    background-image: $white;
   }
 
   .ten {
     grid-row: 4 / span 2;
     grid-column: 8 / span 2;
-    background: white;
+    background-image: $white;
   }
 
   .eleven {
     grid-row: 6 / span 2;
     grid-column: 2 / span 2;
-    background: gray;
+    background-image: $black2;
   }
 
   .twelve {
     grid-row: 6 / span 1;
     grid-column: 4 / span 2;
-    background: white;
+    background-image: $white;
   }
 
   .thirteen {
     grid-row: 7 / span 1;
     grid-column: 4 / span 2;
-    background: white;
+    background-image: $white;
   }
 
   .fourteen {
     grid-row: 6 / span 1;
     grid-column: 6 / span 4;
-    background: white;
+    background-image: $white;
   }
 
   .fifteen {
     grid-row: 7 / span 3;
     grid-column: 1 / span 1;
-    background: yellow;
+    background-image: $yellow;
   }
 
   .sixteen {
     grid-row: 8 / span 2;
     grid-column: 2 / span 2;
-    background: white;
+    background-image: $white;
   }
 
   .seventeen {
     grid-row: 8 / span 1;
     grid-column: 4 / span 2;
-    background: gray;
+    background-image: $black2;
   }
 
   .eighteen {
     grid-row: 7 / span 2;
     grid-column: 6 / span 4;
-    background: blue;
+    background: $blue;
   }
 
   .nineteen {
     grid-row: 7 / span 3;
     grid-column: 10 / span 1;
-    background: red;
+    background-image: $red;
   }
 
   .twenty {
     grid-row: 9 / span 1;
     grid-column: 4 / span 6;
-    background: white;
+    background-image: $white;
   }
   
   .grid > div {

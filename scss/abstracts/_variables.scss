@@ -22,43 +22,29 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 /// @type Color
 $text-color: rgb(34, 34, 34) !default;
 
+/// White color
+/// @type Color
+$white: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%) !default;
+
+/// Black color
+/// @type Color
+$black: linear-gradient(to bottom, #0d0d0d 0%, #1e1e1e 100%) !default;
+
+/// Black 2 color
+/// @type Color
+$black2: linear-gradient(to bottom, #161616 0%, #272727 100%) !default;
+
 /// Main brand color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$yellow: linear-gradient(to bottom, #ffda37 0%, #ffd415 100%) !default;
 
-/// Light grey
+/// Red color
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$red: linear-gradient(to bottom, #ff4e37 0%, #ff3015 100%) !default;
 
-/// Medium grey
+/// Blue color
 /// @type Color
-$mid-grey: rgb(153, 153, 153) !default;
-
-/// Dark grey
-/// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
-/// MONDRIAN
-
-/// White
-/// @type Color
-$white: rgb(255, 255, 255) !default;
-
-/// Black
-/// @type Color
-$black: rgb(0, 0, 0) !default;
-
-/// Primary red
-/// @type Color
-$red: rgb(255, 00, 00) !default;
-
-/// Primary blue
-/// @type Color
-$blue: rgb(00, 00, 255) !default;
-
-/// Primary yellow
-/// @type Color
-$yellow: rgb(255, 255, 00) !default;
+$blue: linear-gradient(to bottom, #447feb 0%, #256ae8 100%) !default;
 
 
 
