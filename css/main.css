@@ -426,6 +426,23 @@ body {
   color: #222222;
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
+.grid__card__paragraph__author,
+.grid__card__paragraph__method {
+  color: linear-gradient(to bottom, #161616 0%, #272727 100%);
+  font-size: 1.25rem;
+  font-weight: 400; }
+
+.grid__card__paragraph__title {
+  font-size: 1.563rem;
+  color: linear-gradient(to bottom, #161616 0%, #272727 100%);
+  font-weight: 400;
+  width: 80%; }
+
+.grid__card__paragraph__text {
+  font-size: 1rem;
+  color: linear-gradient(to bottom, #161616 0%, #272727 100%);
+  font-weight: 500; }
+
 /**
  * Clear inner floats
  */
@@ -487,15 +504,36 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
   grid-gap: 10px;
   width: 100vw;
   height: 100vh; }
 
+.grid > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end; }
+
 .grid__card {
   border-radius: 2px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.grid__card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: end;
+  border-right: 1px solid;
+  border-color: linear-gradient(to bottom, #161616 0%, #272727 100%);
+  width: 330px;
+  margin: 20px;
+  padding-right: 5px; }
+
+.grid__card__info > * {
+  margin: 0;
+  padding: 0; }
 
 .one {
   grid-row: 1 / 2;
@@ -525,7 +563,9 @@ body {
 .six {
   grid-row: 2 / span 4;
   grid-column: 2 / span 4;
-  background-image: linear-gradient(to bottom, #ff4e37 0%, #ff3015 100%); }
+  background-image: linear-gradient(to bottom, #ff4e37 0%, #ff3015 100%);
+  min-width: 340px;
+  min-height: 340px; }
 
 .seven {
   grid-row: 2 / span 2;
@@ -596,8 +636,3 @@ body {
   grid-row: 9 / span 1;
   grid-column: 4 / span 6;
   background-image: linear-gradient(to bottom, #fbfbfb 0%, #eaeaea 100%); }
-
-.grid > div {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
